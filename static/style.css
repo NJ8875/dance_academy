@@ -1,0 +1,168 @@
+/* inporting fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* for whole body  */
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+/* seeeting up navigation bar */
+#navbar{
+position:relative;
+
+}
+#navbar::before{
+    content: "";
+    width: 100%;
+    height: 515px;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    background:url('/static/bg1.jpg') no-repeat center center/cover;
+    opacity: .96;
+}
+#navbar ul{
+    background-color:rgba(0, 0, 0, 0.555);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 11px;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding:7px 29px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 2px;
+    transition: all;
+    transition-duration: .4s;
+
+
+}
+#navbar li a:hover{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+#navbar ul img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* introsection */
+#introsection {
+    height: 479px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    animation-name: textzoomin;
+    flex-direction: column;
+    padding: 3px 221px;
+    animation-delay: .6;
+    animation-duration: 2.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+/* //ourmission section */
+#heading{
+    font-size: 2px ;
+    background-color: red;
+}
+
+.sponser{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h1{
+font-size: 2.4rem;
+}
+.card p{
+    font-size: 1rem;
+}
+.card img{
+    
+    
+    width: 130px;
+    height: 130px;
+    transition: all;
+    transition-duration: .8s;
+}
+
+.card{
+    width: 28%;
+    height: 473px;
+    border: 4px solid black;
+    margin: 14px 8px;
+    border-radius: 14px;
+    padding: 21px 17px;
+    background-color: antiquewhite;
+    transition: all;
+    transition-duration: .8s;
+}
+.card:hover{
+    background-color: rgba(250, 235, 215, 0.432);
+}
+.card img:hover{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+#introsection h1{
+    font-size :55px;;
+}
+#introsection p{
+    font-size: 33px;
+}
+
+
+/* spenser section  */
+#sponsersection{
+    height: 300px;
+    background-color:blue;
+}
+#footer{
+    height: 300px;
+    background-color:yellow;
+}
+
+/* animation */
+@keyframes textzoomin {
+    from
+            {
+                color: rgba(255, 255, 255, 0.226);
+            }
+    to{
+                color: white;
+            }
+}
+
+/* utilities */
+.center{
+    text-align: center;
+}
+
